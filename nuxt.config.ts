@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "@vueuse/motion/nuxt"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/icon", "@vueuse/motion/nuxt"],
   app: {
     head: {
       title: "Nuxt Portfolio",

@@ -155,7 +155,7 @@ const approaches = [
               >
                 <span
                   class="w-2 h-2 bg-primary-500 rounded-full animate-pulse"
-                />
+                ></span>
                 Full Stack Developer
               </span>
             </div>
