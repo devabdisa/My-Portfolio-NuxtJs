@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #20b2a6;
+  --color-surface: #1a2329;
+  --color-border: #242b32;
+  --color-background: #0f1418;
+}
+
+.dark {
+  --color-background: #0f1418;
+}
+
+body {
+  @apply bg-[#0f1418] text-[#f0f2f5] font-sans;
+  scroll-behavior: smooth;
+}
+
+.glass {
+  background-color: rgba(26, 35, 41, 0.5);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(36, 43, 50, 0.5);
+}
+
+.glow-text {
+  text-shadow: 0 0 30px rgba(32, 178, 166, 0.5);
+}
+
+.glow-border {
+  box-shadow:
+    0 0 20px rgba(32, 178, 166, 0.2),
+    inset 0 0 20px rgba(32, 178, 166, 0.05);
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#20b2a6] to-[#f5a623];
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes slow-drift {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, -30px);
+  }
+  50% {
+    transform: translate(-15px, -20px);
+  }
+  75% {
+    transform: translate(30px, 10px);
+  }
+}
+
+.animate-slow-drift {
+  animation: slow-drift 20s ease-in-out infinite;
+}
